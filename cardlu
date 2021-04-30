@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<div class="flexbox-container">
+        <div class="flexbox-item">
+             <img src="https://i.postimg.cc/nL91LJsM/apple.jpg" alt="Apple" class="img">
+             <div class="fruit-name">Apple</div>
+             <div class="fruit-type">This is a wider card  with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</div>
+             <div>
+                 <span class="tag">Net Wt:500gms</span>
+                 <span class="tag">Gross:500gms</span>
+            </div>
+            <div><h1 class="price">$250</h1>
+            <button type="button" class="btn btn-success add-to-cart">Add To Cart</button>
+            <div>
+                <hr>
+                <p class="hr-text">"Today in 180 mins"</p>
+            </div>
+            </div>  
+        </div>
+            <div class="flexbox-item">
+                <img src="https://i.postimg.cc/RZnRtWB9/cherry-2.jpg" alt="cherry" class="img">
+                <div class="fruit-name">Cherry</div>
+                <div class="fruit-type">This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.</div>
+                <div>
+                    <span class="tag">Net Wt:500gms</span>
+                    <span class="tag">Gross:500gms</span>
+                </div>
+                <div>
+                    <h1 class="price">$250</h1>
+                    <button type="button" class="btn btn-success add-to-cart">Add To Cart</button>
+                </div>
+                <div><hr><p class="hr-text">"Today in 180 mins"</p></div>
+            </div>
+            <div class="flexbox-item">
+                <img src="https://i.postimg.cc/gJ1dQTJC/orange-1.jpg" alt="orange" class="img">
+                <div class="fruit-name">Orange</div>
+                <div class="fruit-type">This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.</div>
+                <div>
+                    <span class="tag">Net Wt:500gms</span>
+                    <span class="tag">Gross:500gms</span>
+                </div>
+                <div>
+                    <h1 class="price">$250</h1>
+                    <button type="button" class="btn btn-success add-to-cart">Add To Cart</button>
+                </div>
+                <div>
+                    <hr>
+                    <p class="hr-text">"Today in 180 mins"</p>
+                </div>
+            </div>
+     
+    </div>
+    
+    
+    
+    
+    
+    html
+    
+    
+    
+    
+    
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+div {
+  font-family: "Roboto", sans-serif;
+}
+.flexbox-container {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 6vh;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.flexbox-item {
+  margin: 10px;
+  background-color: white;
+  min-height: 200px;
+  max-width: 411px;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px;
+}
+
+.img {
+  width: 100%;
+}
+
+.fruit-name {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.fruit-type {
+  margin: 20px;
+  text-align: justify;
+  margin-top: 1vh;
+}
+
+.tag {
+  padding: 4px;
+  margin: 15px;
+  color: gray;
+  font-size: 12px;
+}
+
+.price {
+  margin: 18px;
+  font-size: 19px;
+}
+
+.add-to-cart {
+  margin: 20px;
+  float: right;
+  margin-top: -52px;
+}
+
+.hr-text {
+  text-align: center;
+  line-height: 1px;
+  font-size: 13px;
+}
+
+
+
+
+
+css
