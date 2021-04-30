@@ -1,0 +1,68 @@
+button Start Party!
+
+
+
+html pug
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap')
+
+@property --hue
+  syntax '<integer>'
+  inherits true
+  initial-value 0
+  
+:root
+  --bg hsl(0, 0%, 10%)
+  --button-bg hsl(0, 0%, 0%)
+  
+*
+  box-sizing border-box
+  
+body
+  background hsl(0, 0%, 10%)
+  display flex
+  align-items center
+  justify-content center
+  min-height 100vh
+  transform-style preserve-3d
+  perspective 800px
+  
+button
+  --border 'hsl(%s, 0%, 50%)' % var(--hue, 0)
+  --shadow 'hsl(%s, 0%, 80%)' % var(--hue, 0)
+  user-select none
+  font-family 'Inter', sans-serif
+  font-size 2rem
+  padding 1.25rem 2.5rem
+  border-radius 0.5rem
+  border 0.25rem solid
+  background var(--button-bg)
+  color hsl(0, 0%, 100%)
+  border-color var(--border)
+  box-shadow 0 1rem 2rem -1.5rem var(--shadow)
+  transition transform 0.2s, box-shadow 0.2s
+  cursor pointer
+  outline transparent
+  
+  &:hover
+    --border 'hsl(%s, 80%, 50%)' % var(--hue, 0)
+    --shadow 'hsl(%s, 80%, 50%)' % var(--hue, 0)
+    animation hueJump 0.75s infinite linear
+    transform rotateY(10deg) rotateX(10deg)
+    
+  &:active
+    transform rotateY(10deg) rotateX(10deg) translate3d(0, 0, -15px)
+    box-shadow 0 0rem 0rem 0rem var(--shadow)
+    animation-play-state paused
+    
+@keyframes hueJump
+  to
+    --hue 360
+    
+    
+    
+    
+    css stylus
