@@ -1,0 +1,93 @@
+<div class='container-fluid'>
+  <div class='jumbotron'>
+        <h1 class='text-center'>rgb(255, 255, 255)</h1>
+  <h2 class='text-center'>#FFFFFF</h2>
+  <div class='text-center'>
+    <button class = 'btn btn-primary' id='btnBackground'>Change Background Color</button>
+    <button class= 'btn btn-info' id='btnAppend'>Toggle List</button>
+    <p>Double click on either the rgb or hexademial value to add it to your list.</p>
+  </div>
+  </div>
+</div>
+
+
+
+
+html
+
+
+
+
+h1, h2 {
+  text-shadow: 1px 2px 3px black;
+}
+
+
+
+
+css
+
+
+
+
+
+let body = document.querySelector('body')
+let btnBackground = document.getElementById('btnBackground');
+let titleText = document.querySelector('h1');
+let subText = document.querySelector('h2');
+
+let rgbChoicesArr = [];
+let hexChoicesArr = [];
+
+
+titleText.addEventListener('dblclick', function() {
+  rgbChoicesArr.push(this.textContent);
+  alert(rgbChoicesArr);
+})
+
+subText.addEventListener('dblclick', function() {
+  hexChoicesArr.push(this.textContent);
+  alert(hexChoicesArr);
+})
+
+btnBackground.addEventListener('click', function() {
+  
+  let r = Math.floor(Math.random() * 255) + 1;
+  let g = Math.floor(Math.random() * 255) + 1;
+  let b = Math.floor(Math.random() * 255) + 1;
+  
+  let rHex, gHex, bHex;
+  
+// For decimal values <= 15, add a 0 to the start of the hex number; otherwise, leave it as is.
+  if (r <= 15) {
+    rHex = "0" + r.toString(16).toUpperCase();
+  } else {
+    rHex = r;
+  }
+  
+    if (g <= 15) {
+    gHex = "0" + g.toString(16).toUpperCase();
+  } else {
+    gHex = g;
+  }
+  
+    if (b <= 15) {
+    bHex = "0" + b.toString(16).toUpperCase();
+  } else {
+    bHex = b;
+  }
+  
+  // Set the background color of the body to the randomly created rgb values.
+  body.style.backgroundColor = `rgb(${r},${g},${b})`;
+  // Update the h1 and h2 to the current rgb and hexadecimal values, respectively.
+  titleText.textContent = `rgb(${r}, ${g}, ${b})`;
+  subText.textContent = `#${rHex.toString(16).toUpperCase()}${gHex.toString(16).toUpperCase()}${bHex.toString(16).toUpperCase()}`
+
+});
+
+
+
+
+
+
+js
