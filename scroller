@@ -1,0 +1,152 @@
+#container
+  h1 How far can you scroll?
+  #distance
+  #road
+  #shadow
+#scroller
+
+
+
+
+
+html
+
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  background: radial-gradient(#9bdfff, #009be4);
+  background-attachment: fixed;
+  background-position: center top;
+  font-family: "Francois One", Helvetica, Arial, sans-serif;
+  color: #ffd200;
+}
+
+#container {
+  position: fixed;
+  top: 10%;
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 1px 1px 0px #ff573c,
+      2px 2px 0px #ff573c,
+      3px 3px 0px #ff573c,
+      4px 4px 0px #ff573c,
+      5px 5px 0px #ff573c,
+      6px 6px 0px #ff573c,
+      7px 7px 0px #ff573c;
+  }
+
+  #distance {
+    color: #9bdfff;
+    text-align: center;
+    font-family: monospace;
+    font-size: 60px;
+    text-shadow: 1.5px 1.5px 0 #fff, 0px 1.5px 0 #fff, -1.5px -1.5px 0 #fff,
+      -1.5px -1.5px 0 #fff, -1.5px 1.5px 0 #fff, 1.5px -1.5px 0 #fff,
+      0.7px 0.7px 0 #009be4, 1.4px 1.4px 0 #009be4, 2.1px 2.1px 0 #009be4,
+      2.8px 2.8px 0 #009be4, 3.5px 3.5px 0 #009be4, 4.2px 4.2px 0 #009be4,
+      4.9px 4.9px 0 #009be4, 5.6px 5.6px 0 #009be4, 6.3px 6.3px 0 #009be4,
+      7px 7px 0 #009be4;
+  }
+
+  #road {
+    width: 50em;
+    height: 15em;
+    background: #222;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(30em) rotateX(30deg);
+    overflow: hidden;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(var(--scroll) * 100px);
+      min-width: 100%;
+      width: calc(100% + (var(--scroll) * -100px));
+      height: 1em;
+      background: linear-gradient(
+        90deg,
+        white 0%,
+        white 70%,
+        transparent 70%,
+        transparent 100%
+      );
+      background-size: 7em;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    background: #111;
+    bottom: -3em;
+    transform-origin: top;
+    transform: perspective(30em) rotateX(-30deg);
+  }
+
+  #shadow {
+    position: absolute;
+    bottom: -8em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 6em;
+    background: linear-gradient(black, transparent);
+    opacity: 0.5;
+  }
+}
+
+#scroller {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 5000px;
+  pointer-events: none
+}
+
+
+
+
+
+css
+
+
+
+
+
+const scrollElem = document.getElementById("scroller");
+const distanceElem = document.getElementById("distance");
+distanceElem.innerText = '0.000 Meters';
+
+window.addEventListener("scroll", () => {
+  let distance = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
+  distanceElem.innerText = (-0.1 * distance).toFixed(3) + ' Meters';
+  document.body.style.setProperty("--scroll", distance);
+}, false);
+
+setInterval(() => {
+  let scrollTop = window.scrollY;
+  let height = scrollElem.offsetHeight;
+  if (scrollTop > height - 3000){
+    scrollElem.style.height = height + 5000 + 'px';
+  }
+}, 300);
+
+
+
+
+
+js
