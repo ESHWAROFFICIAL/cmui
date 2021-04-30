@@ -1,0 +1,480 @@
+h1 Scroll to scratch
+svg.record-player(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105.25 105.25')
+  g(transform='translate(310.848 60.185)')
+    g.frame
+      rect.frame__shine(width='95.25' height='95.25' x='-305.848' y='-55.185' ry='4.276' fill-rule='evenodd')
+      path.frame__base(d='M-288.915-55.185v95.25h74.04a4.267 4.267 0 004.276-4.276v-86.697a4.267 4.267 0 00-4.276-4.277z' fill-rule='evenodd')
+    circle.record-base(cx='-258.223' cy='-7.56' r='39.688' fill-rule='evenodd' fill='red')
+    g.knob(transform='matrix(-.10538 .05103 -.05305 -.10674 -308.635 40.311)')
+      ellipse.knob__base(ry='55.325' rx='56.661' cx='-151.007' cy='79.914')
+      path.knob__shine(d='M-94.346 79.914a56.661 55.325 0 01-8.12 28.538l-48.541-28.538z')
+      circle.knob__top(r='41.961' cy='79.914' cx='-151.007')
+    g.record
+      circle.record__body(cx='-258.223' cy='-7.56' r='37.688' fill-rule='evenodd')
+      circle.record__label-base(cx='-258.223' cy='-7.56' r='35.278' fill-rule='evenodd' transform='matrix(.45 0 0 .45 -142.022 -4.158)')
+      circle.record__label(r='35.278' cy='-7.56' cx='-258.223' fill-rule='evenodd' transform='matrix(.39107 0 0 .39107 -157.239 -4.603)')
+      g.face
+        g.eyes--open
+          g(transform='translate(86.028 -11.42)')
+            circle.eye(r='2.74' cy='2.273' cx='-351.801')
+            circle.pupil(r='.661' cy='1.423' cx='-352.841')
+          g(transform='translate(101.128 -11.42)')
+            circle.eye(cx='-351.801' cy='2.273' r='2.74')
+            circle.pupil(cx='-352.841' cy='1.423' r='.661')
+        g.mouth
+          path.mouth__opening(d='M-262.187-8.31a3.969 3.969 0 00-.005.094 3.969 3.969 0 003.969 3.969 3.969 3.969 0 003.968-3.969 3.969 3.969 0 00-.003-.094z')
+          path.mouth__tongue(d='M-256.333-6.987a3.969 3.969 0 00-3.616 2.34 3.969 3.969 0 001.726.4 3.969 3.969 0 003.615-2.34 3.969 3.969 0 00-1.725-.4z')
+      g.face--nauseous
+        path(d='M-248.384-7.21l-4.584-1.937 4.584-1.938M-268.063-7.21l4.584-1.937-4.584-1.938' fill='none' stroke-width='.794' stroke-linecap='round' stroke-linejoin='round')
+        circle(cx='-258.223' cy='-6.657' r='1.654')
+    g.record__shine(fill='none' stroke='green' stroke-width='5' stroke-linecap='round' stroke-linejoin='round')
+      path(d='M-222.921-7.56a35.302 35.302 0 00-10.356-24.946M-293.525-7.56a35.302 35.302 0 0010.355 24.947M-227.206-7.56a31.018 31.018 0 00-9.099-21.919M-289.241-7.56a31.018 31.018 0 009.099 21.92M-231.083-7.56a27.14 27.14 0 00-7.961-19.179M-285.364-7.56a27.14 27.14 0 007.962 19.18M-234.96-7.56A23.263 23.263 0 00-241.784-24M-281.487-7.56a23.263 23.263 0 006.825 16.44M-238.837-7.56a19.386 19.386 0 00-5.687-13.7M-277.61-7.56a19.386 19.386 0 005.687 13.7' stroke-width='1.7937399999999999')
+    g.volume
+      rect.volume__base(width='5.306' height='16.303' x='-220.864' y='19.441' ry='1.803' stroke-width='.794' stroke-linecap='round' stroke-linejoin='round')
+      g.volume__control
+        rect.volume__slider(width='3.742' height='3.274' x='-220.082' y='27.99' ry='0')
+        path.volume__indicator(d='M-219.013 29.627h1.604')
+      path.volume__levels(d='M-224.425 27.592h1.603M-224.425 31.826h1.603M-224.425 23.359h1.603' fill='none' stroke-width='.265')
+    circle.knob__indicator(cx='-300.272' cy='24.212' r='1' stroke-linecap='round' stroke-linejoin='round')
+    g.branding
+      rect(width='12.851' height='5.895' x='-303.742' y='-49.377' ry='0')
+      path(d='M-301.821-48.388h9.01v1.8h-9.01zM-301.821-46.272h5.001v1.8h-5.001z')
+    g.player-arm(transform='translate(-65.673 -.472)')
+      circle.knob__base(r='7.938' cy='-43.412' cx='-156.583')
+      circle.knob__top(cx='-156.583' cy='-43.412' r='6.718')
+      //- circle(transform='rotate(165)' fill='#f9f9f9')
+      path.arm(d='M-157.355-46.505s-.332 4.745 0 7.083c1.687 11.87 8.335 22.674 10.023 34.544.93 6.55 0 19.845 0 19.845' fill='none' stroke='#e6e6e6' stroke-width='1.587' stroke-linecap='round' stroke-linejoin='round')
+      rect.player-arm__top(width='8.968' height='4.544' x='-163.226' y='-45.684' ry='1.57' stroke-width='.6')
+      path.player-arm__needle(d='M-148.885 11.77l3.47.175-.76 4.604-2.412-.174z')
+      rect.player-arm__counter(ry='.78' y='-48.611' x='-160.573' height='2.362' width='5.953' stroke-width='.529' stroke-linecap='round' stroke-linejoin='round')
+.genre-switch
+  select
+    option(value='BLUES') Blues
+    option(value='CLASSICAL') Classical
+    option(value='HIPHOP') Hip hop
+    option(value='INSTRUMENTAL' selected) Instrumental
+    option(value='JAZZ') Jazz
+    option(value='POP') Pop
+input#volume(type='checkbox')
+label(for='volume', title='Toggle sound')
+  //- On
+  svg(viewBox="0 0 24 24")
+    path(d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z")
+  //- Off
+  svg(viewBox="0 0 24 24")
+    path(d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z")
+    
+    
+    
+    
+    
+    
+    
+    html
+    
+    
+    
+    
+    
+    *
+  box-sizing border-box
+
+:root
+  --hue 160
+  --size 50
+  --record-shine hsla(0, 0%, 100%, 0.45)
+  --record-body hsl(0, 0%, 15%)
+  --player-base hsl(0, 0%, 35%)
+  --player-shine hsl(0, 0%, 30%)
+  --record-base hsl(0, 0%, 5%)
+  --stroke hsl(0, 0%, 5%)
+  --pupil hsl(0, 0%, 100%)
+  --tongue hsl(0, 100%, 50%)
+  --record-label-base hsl(0, 0%, 98%)
+  --record-label 'hsl(%s, 100%, 90%)' % var(--hue)
+  --knob-base hsl(0, 0%, 70%)
+  --knob-top hsl(0, 0%, 15%)
+  --player-accent hsl(0, 100%, 50%)
+  --needle hsl(0, 0%, 10%)
+  --counter hsl(0, 0%, 40%)
+  --arm-top hsl(0, 0%, 40%)
+
+body
+  width 100vw
+  height 250vh
+  background var(--record-label)
+  overflow-x hidden
+  transition background .25s ease
+  
+h1
+  position absolute
+  top calc(50% - (var(--size) * 0.5vmin))
+  left 50%
+  font-size clamp(1rem, 5vmin, 2.25rem)
+  transform translate(-50%, -200%)
+  color 'hsl(%s, 60%, 60%)' % var(--hue)
+  transition color 0.25s
+
+.record-player
+  height calc(var(--size) * 1vmin)
+  width calc(var(--size) * 1vmin)
+  position fixed
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  display none
+
+.frame
+  &__shine
+    fill var(--player-shine)
+  &__base
+    fill var(--player-base)
+
+.record-base
+  fill var(--record-base)
+.record__body
+  fill var(--record-body)
+.record__shine
+  stroke var(--record-shine)
+
+.pupil
+  fill var(--pupil)
+.eye
+  fill var(--stroke)
+.mouth
+  &__opening
+    fill var(--stroke)
+  &__tongue
+    fill var(--tongue)
+
+.face--nauseous
+  display none
+  path
+    stroke var(--stroke)
+  circle
+    fill var(--stroke)
+
+.record__label-base
+  fill var(--record-label-base)
+.record__label
+  fill var(--record-label)
+  transition fill .25s ease
+
+.knob
+  &__shine
+    fill var(--record-shine)
+  &__top
+    fill var(--knob-top)
+  &__base
+    fill var(--knob-base)
+  &__indicator
+    fill var(--player-accent)
+
+.player-arm
+  &__needle
+    fill var(--needle)
+  &__counter
+    fill var(--counter)
+  &__top
+    fill var(--arm-top)
+
+.volume
+  &__levels
+    stroke var(--stroke)
+    stroke-width 1
+  &__base
+    fill var(--stroke)
+    stroke var(--knob-base)
+  &__slider
+    fill var(--knob-base)
+  &__indicator
+    fill var(--player-accent)
+    stroke var(--player-accent)
+
+.branding
+  rect
+    fill var(--player-accent)
+  path
+    fill var(--pupil)
+
+label
+  height 44px
+  width 44px
+  position fixed
+  bottom 1rem
+  right 1rem
+  cursor pointer
+
+  & > svg
+    position absolute
+    height 100%
+    width 100%
+    top 0
+    left 0
+
+  path
+    fill var(--stroke)
+
+  svg:nth-of-type(1)
+    display none
+
+[type='checkbox']
+  // opacity 0
+  display none
+  height 0
+  width 0
+
+:checked ~ label
+  svg:nth-of-type(1)
+    display block
+  svg:nth-of-type(2)
+    display none
+
+.genre-switch
+  display none
+  position fixed
+  top calc(50% + (var(--size) * 0.5vmin))
+  left 50%
+  transform translate(-50%, -50%)
+  margin-top 4rem
+
+  &:after
+    content ''
+    position absolute
+    top 50%
+    right 5%
+    height 10px
+    width 10px
+    background 'hsl(%s, 50%, 50%)' % var(--hue)
+    transform translate(-50%, -50%)
+    -webkit-clip-path polygon(0 0, 100% 0, 50% 100%)
+    clip-path polygon(0 0, 100% 0, 50% 60%)
+
+select
+  padding 1rem 2rem
+  font-family sans-serif
+  border-radius 10px
+  border '4px solid hsl(%s, 50%, 50%)' % var(--hue)
+  appearance none
+  -webkit-appearance none
+  background none
+  font-weight bold
+  outline transparent
+  color 'hsl(%s, 50%, 50%)' % var(--hue)
+  transition border .25s ease, color .25s ease
+
+
+  option
+    appearance none
+    -webkit-appearance none
+    background none
+    outline transparent
+    padding 1rem
+    
+    
+    
+    
+    css
+    
+    
+    
+    
+    
+    const {
+  gsap,
+  ScrollTrigger,
+  gsap: { timeline, set, to, delayedCall },
+} = window
+
+gsap.registerPlugin(ScrollTrigger)
+
+// Utility function - h/t to https://www.trysmudford.com/blog/linear-interpolation-functions/
+const LERP = (x, y, a) => x * (1 - a) + y * a
+const CLAMP = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a))
+const INVLERP = (x, y, a) => CLAMP((a - x) / (y - x))
+const RANGE = (x1, y1, x2, y2, a) => LERP(x2, y2, INVLERP(x1, y1, a))
+
+const VOLUME_TOGGLE = document.querySelector('input')
+const EYES = document.querySelector('.eyes--open')
+const LIMIT = 0.2
+
+const TRACKS = {
+  // Forest by Yakov Golman(https://freemusicarchive.org/music/Yakov_Golman/Piano__orchestra_1/Yakov_Golman_-_Forest_1236) is licensed under a Attribution License: http://creativecommons.org/licenses/by/4.0/
+  CLASSICAL: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/yakov-golman-forest-classic.mp3'
+    ),
+    HUE: 40,
+  },
+  // Born Ready by Flex Vector(https://freemusicarchive.org/music/Flex_Vector/20190131191544588/Flex_Vector_-_Born_Ready_1591) is licensed under a Attribution-NonCommercial-ShareAlike License: http://creativecommons.org/licenses/by-nc-sa/4.0/
+  INSTRUMENTAL: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/flex-vector-bord-ready-instrumental.mp3'
+    ),
+    HUE: 160,
+  },
+  // Spencer - Bluegrass (ID 1230) by Lobo Loco(https://freemusicarchive.org/music/Lobo_Loco/Salad_Mixed/Spencer_-_Bluegrass_ID_1230) is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License: http://creativecommons.org/licenses/by-nc-nd/4.0/
+  BLUES: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/lobo-loco-spencer-bluegrass-blues.mp3'
+    ),
+    HUE: 190,
+  },
+  // Rainbow by Chad Crouch(https://freemusicarchive.org/music/Chad_Crouch/Motion/Rainbow_1648) is licensed under a Attribution-NonCommercial 3.0 International License: http://creativecommons.org/licenses/by-nc/3.0/
+  POP: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/chad-crouch-rainbow-pop.mp3'
+    ),
+    HUE: 320,
+  },
+  // Magic by Yung Kartz(https://freemusicarchive.org/music/Yung_Kartz/July_2019/Magic) is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License: http://creativecommons.org/licenses/by-nc-nd/4.0/
+  HIPHOP: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/yung-kartz-magic-hiphop.mp3'
+    ),
+    HUE: 280,
+  },
+  // Story has Begun (Kielokaz 156) by KieLoKaz(https://freemusicarchive.org/music/KieLoKaz/Walker_Traffic/Story_has_Begun_Kielokaz_156) is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 License: http://creativecommons.org/licenses/by-nc-nd/4.0/
+  JAZZ: {
+    TRACK: new Audio(
+      'https://assets.codepen.io/605876/kielokaz-story-has-begun-jazz.mp3'
+    ),
+    HUE: 220,
+  },
+}
+
+let currentTrack = TRACKS.INSTRUMENTAL.TRACK
+
+const faceSwap = spinning => {
+  set('.face', { display: spinning ? 'none' : 'block' })
+  set('.face--nauseous', { display: spinning ? 'block' : 'none' })
+}
+let timer
+
+for (let genre of Object.keys(TRACKS)) {
+  TRACKS[genre].TRACK.loop = true
+  TRACKS[genre].TRACK.muted = true
+  TRACKS[genre].TRACK.volume = 1
+}
+
+const toggleMute = () => {
+  const MUTE = !TRACKS.CLASSICAL.TRACK.muted
+  for (let genre of Object.keys(TRACKS)) {
+    TRACKS[genre].TRACK.muted = MUTE
+  }
+}
+
+const genRate = s => {
+  let rate = 1
+  const val = CLAMP(s, -LIMIT, LIMIT)
+  // if (val < 0) rate = RANGE(-5, 0, 0.5, 1, val)
+  // else rate = RANGE(0, 5, 1, 4, val)
+  rate = RANGE(-LIMIT, LIMIT, -LIMIT, LIMIT, val)
+  return rate
+}
+
+set('.record', { transformOrigin: '50% 50%' })
+set('.player-arm', { transformOrigin: '25% 15%', rotate: 25 })
+to('.player-arm', { duration: 0.5, rotate: 26, repeat: -1, yoyo: true })
+
+const TL = timeline({ repeat: -1 })
+  .to(
+    '.record',
+    {
+      rotate: 360,
+      duration: 1,
+      ease: 'none',
+    },
+    0
+  )
+  .to(
+    '.record',
+    {
+      transformOrigin: '49.5% 50%',
+      repeat: 1,
+      yoyo: true,
+      duration: 0.5,
+    },
+    0
+  )
+  .to(
+    '.record__shine',
+    {
+      transformOrigin: '49.5% 50%',
+      repeat: 1,
+      yoyo: true,
+      duration: 0.5,
+    },
+    0
+  )
+  .to(
+    '.record__shine',
+    {
+      rotate: '+=4',
+      repeat: 1,
+      yoyo: true,
+      duration: 0.5,
+      ease: 'none',
+    },
+    0
+  )
+set('.record__shine', { transformOrigin: '50% 50%', rotate: 55 })
+set(['.record-player', '.genre-switch'], { display: 'block' })
+
+document.documentElement.scrollTop = 2
+ScrollTrigger.create({
+  trigger: 'body',
+  start: 1,
+  end: 'bottom bottom',
+  onLeaveBack: () => (document.documentElement.scrollTop = document.body.scrollHeight - 2),
+  onLeave: () => (document.documentElement.scrollTop = 2),
+  onUpdate: self => {
+    faceSwap(true)
+    const speed = self.getVelocity() / 1000
+    const rate = genRate(speed)
+    new timeline()
+      .fromTo(currentTrack, { currentTime: currentTrack.currentTime < rate ? currentTrack.duration - (rate- currentTrack.currentTime) : currentTrack.currentTime + rate }, { playbackRate: 1 }, 0)
+      .fromTo(TL, { timeScale: speed }, { timeScale: 1 }, 0)
+    if (timer) timer.kill()
+    timer = delayedCall(0.2, () => faceSwap(false))
+  },
+})
+
+const blink = EYES => {
+  gsap.set(EYES, { scaleY: 1 })
+  if (EYES.BLINK_TL) EYES.BLINK_TL.kill()
+  EYES.BLINK_TL = timeline({
+    delay: Math.floor(Math.random() * 5) + 1,
+    onComplete: () => blink(EYES),
+  })
+  EYES.BLINK_TL.to(EYES, {
+    duration: 0.05,
+    transformOrigin: '50% 50%',
+    scaleY: 0,
+    yoyo: true,
+    repeat: 1,
+  })
+}
+blink(EYES)
+
+VOLUME_TOGGLE.addEventListener('input', () => {
+  toggleMute()
+  currentTrack.play()
+  // currentTrack = TRACKS.CLASSIC.TRACK
+})
+const GENRE_SWITCH = document.querySelector('select')
+GENRE_SWITCH.addEventListener('change', () => {
+  currentTrack.pause()
+  document.documentElement.style.setProperty(
+    '--hue',
+    TRACKS[GENRE_SWITCH.value].HUE
+  )
+  currentTrack = TRACKS[GENRE_SWITCH.value].TRACK
+  currentTrack.play()
+})
+
+
+
+
+
+js
